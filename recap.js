@@ -46,3 +46,16 @@ function evenValue(num) {
     }
 }
 evenValue([2, 7, 90, 22222,78, 89, 345, 675, 23, 88, 34, 79, 55, 09, 22, 96, 202, 356,9995,986758]);
+ 
+//finding odd elements type-2
+function oddValue(number) {
+    let odd = number[0];
+    console.log('Odd numbers are:');
+    for (let i = 0; i < number.length; i++) {
+        if (number[i] % 2 != 0) {
+            odd = number[i];
+            console.log(odd);
+        }
+    }
+}
+oddValue([2, 7, 90,78, 89, 345, 675, 23, 88, 34, 79, 55, 09, 22, 96, 202, 356,9995,986758]);
